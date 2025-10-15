@@ -4,18 +4,17 @@
   max-width: 500px; /* Prevents it from getting too huge */
 }
 
-/* Center text vertically and add spacing */
 .hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem 0; /* Added vertical padding */
+  padding: 2rem 0; 
 }
 
 @media (min-width: 768px) {
   .hero-text {
     align-items: flex-start;
-    padding-left: 2rem; /* Added left padding for desktop */
+    padding-left: 2rem;
   }
   
   .hero-image {
@@ -23,7 +22,6 @@
   }
 }
 
-/* Rest of your CSS remains the same */
 .navbar {background-color: blueviolet;}
 
 .navbar-nav {
@@ -43,12 +41,28 @@
 
 .nav-item:hover {transform: scale(1.03);}
 
-.CARD {transition: transform 0.3s ease; background-color: mediumpurple;}
+.CARD {transition: transform 0.3s ease; background-color: mediumpurple;
+ border: 1px solid rgba(0,0,0,0.1);}
 .CARD:hover {transform: scale(1.03);}
 .card-header {background-color: mediumpurple !important;}
+.card-body {
+  padding: 2rem 1.5rem !important;
+}
+.card-text {
+  line-height: 1.6; /* Better line spacing for readability */
+  margin-bottom: 1.5rem !important; 
+  min-height: 4.8em; 
+}
+.card-title {
+  margin-bottom: 1rem !important;
+  font-weight: 600;
+  text-align: center;
+  word-wrap: break-word;
+  hyphens: auto; 
+}
+
 
 #myCarousel {
   max-width: 800px;
   margin: 0 auto;
 }
-
