@@ -1,17 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link type="text/css" rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <!DOCTYPE html>
-<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Save a Gamer Foundation</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="bootstrap.min.css">
+  <link type="text/css" rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -34,7 +28,7 @@
           <a class="nav-link" href="#faq">Peculiarities</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#donations">Donations</a>
+          <a class="nav-link" href="#">Donations</a>
         </li>
       </ul>
     </div>
@@ -43,15 +37,16 @@
 </section>
 
 <div class="container pt-5 m-auto mt-5">
-  <div class="row align-items-center gy-4">
+  <div class="row align-items-center gy-4"> <!-- Added gy-4 for vertical gap -->
     <div class="col-md-6 d-flex justify-content-center">
-      <img src="https://static.wixstatic.com/media/f95046_bec407d1ee334e388cc783ebb2dc1ebc~mv2.webp" class="img-thumbnail hero-image" alt="Ass">
+      <img src="https://static.wixstatic.com/media/f95046_bec407d1ee334e388cc783ebb2dc1ebc~mv2.webp/v1/fill/w_1000,h_563,al_c,q_85,usm_0.66_1.00_0.01/f95046_bec407d1ee334e388cc783ebb2dc1ebc~mv2.webp" class="img-thumbnail hero-image" alt="Ass">
     </div>
-    <div class="col-md-6 hero-text text-center text-md-start px-4">
-      <h1 class="display-5 fw-bold mb-4">Postmodern gaming trog</h1>
-      <p class="lead mb-4">Unliving proof of the end of times</p>
-      <!-- DONATION BUTTON -->
-      <a href="#donations" class="btn btn-success btn-lg px-4 py-2">Donate to the Cause</a>
+    <div class="col-md-6 hero-text text-center text-md-start px-4"> <!-- Added px-4 for horizontal padding -->
+      <h1 class="display-5 fw-bold mb-4">Postmodern gaming trog</h1> <!-- Added mb-4 for bottom margin -->
+      <p class="lead">Unliving proof of the end of times</p>
+      <button type="button" class="btn btn-success btn-lg px-4 py-2"      data-bs-toggle="modal" data-bs-target="#donationModal">
+      Donate to the Cause
+      </button>
     </div>
   </div>
 </div>
@@ -62,68 +57,80 @@
             
             <!-- Card 1 -->
             <div class="col-md-3 mb-4">
-                <div class="CARD h-100 rounded-4 d-flex flex-column">
-                    <div class="card-body text-center py-4 flex-grow-1">
+                <div class="CARD h-100 rounded-4 d-flex flex-column">  
+                    <div class="card-body text-center py-4 d-flex flex-column">
+                      <div class="card-icon mb-3">  
                         <svg width="60" height="60" viewBox="0 0 640 640">
                             <path d="M320 128C241 128 175.3 185.3 162.3 260.7C171.6 257.7 181.6 256 192 256L208 256C234.5 256 256 277.5 256 304L256 400C256 426.5 234.5 448 208 448L192 448C139 448 96 405 96 352L96 288C96 164.3 196.3 64 320 64C443.7 64 544 164.3 544 288L544 456.1C544 522.4 490.2 576.1 423.9 576.1L336 576L304 576C277.5 576 256 554.5 256 528C256 501.5 277.5 480 304 480L336 480C362.5 480 384 501.5 384 528L384 528L424 528C463.8 528 496 495.8 496 456L496 435.1C481.9 443.3 465.5 447.9 448 447.9L432 447.9C405.5 447.9 384 426.4 384 399.9L384 303.9C384 277.4 405.5 255.9 432 255.9L448 255.9C458.4 255.9 468.3 257.5 477.7 260.6C464.7 185.3 399.1 127.9 320 127.9z"/>
                         </svg>
+                      </div>
                         <h4 class="card-title">Gaming habits</h4>
-                        <p class="card-text">Anything where he can suck ass online</p>
-                    </div>
-                    <div class="card-footer text-center py-3 border-0">
-                        <a href="#" class="btn btn-dark">See Profile</a>
+                        <p class="card-text flex-grow-1">Anything where he can suck ass online</p>
+                        <div class="card-footer mt-auto pt-3 border-0">
+                            <a href="#" class="btn btn-dark">See Profile</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Card 2 -->
             <div class="col-md-3 mb-4">
-                <div class="CARD h-100 rounded-4 d-flex flex-column">
-                    <div class="card-body text-center py-4 flex-grow-1">
+                <div class="CARD h-100 rounded-4 d-flex flex-column">  
+                    <div class="card-body text-center py-4 d-flex flex-column">
+                      <div class="card-icon mb-3">  
                         <svg width="60" height="60" viewBox="0 0 640 640">
-                           <path d="M320 64C324.6 64 329.2 65 333.4 66.9L521.8 146.8C543.8 156.1 560.2 177.8 560.1 204C559.6 303.2 518.8 484.7 346.5 567.2C329.8 575.2 310.4 575.2 293.7 567.2C121.3 484.7 80.6 303.2 80.1 204C80 177.8 96.4 156.1 118.4 146.8L306.7 66.9C310.9 65 315.4 64 320 64zM320 130.8L320 508.9C458 442.1 495.1 294.1 496 205.5L320 130.9L320 130.9z"/>
+                            <path d="M320 64C324.6 64 329.2 65 333.4 66.9L521.8 146.8C543.8 156.1 560.2 177.8 560.1 204C559.6 303.2 518.8 484.7 346.5 567.2C329.8 575.2 310.4 575.2 293.7 567.2C121.3 484.7 80.6 303.2 80.1 204C80 177.8 96.4 156.1 118.4 146.8L306.7 66.9C310.9 65 315.4 64 320 64zM320 130.8L320 508.9C458 442.1 495.1 294.1 496 205.5L320 130.9L320 130.9z"/>
                         </svg>
+                      </div>
                         <h4 class="card-title">Preservation</h4>
-                        <p class="card-text"> Some legislations still consider him human</p>
-                    </div>
-                    <div class="card-footer text-center py-3 border-0">
-                        <a href="#" class="btn btn-dark">See Profile</a>
+                        <p class="card-text flex-grow-1">Some legislations still consider him human</p>
+                        <div class="card-footer mt-auto pt-3 border-0">
+                            <a href="#" class="btn btn-dark">See Profile</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
 
             <!-- Card 3 -->
             <div class="col-md-3 mb-4">
-                <div class="CARD h-100 rounded-4 d-flex flex-column">
-                    <div class="card-body text-center py-4 flex-grow-1">
+                <div class="CARD h-100 rounded-4 d-flex flex-column">  
+                    <div class="card-body text-center py-4 d-flex flex-column">
+                      <div class="card-icon mb-3">  
                         <svg width="60" height="60" viewBox="0 0 640 640">
-                           <path d="M64 240C64 204.7 92.7 176 128 176C128.5 176 129.1 176 129.6 176C137 139.5 169.3 112 208 112C223 112 237 116.1 248.9 123.2C262.2 97.5 289 80 320 80C351 80 377.8 97.6 391.1 123.2C403.1 116.1 417.1 112 432 112C470.7 112 503 139.5 510.4 176C510.9 176 511.5 176 512 176C547.3 176 576 204.7 576 240C576 251.7 572.9 262.6 567.4 272L72.6 272C67.1 262.6 64 251.7 64 240zM64 347.4C64 332.3 76.3 320 91.4 320L548.5 320C563.6 320 575.9 332.3 575.9 347.4C575.9 417.9 531.5 478.1 469.2 501.5L467.5 516C465.5 532 451.9 544 435.7 544L204.2 544C188.1 544 174.4 532 172.4 516L170.6 501.6C108.4 478.1 64 417.9 64 347.4z"/>
+                            <path d="M64 240C64 204.7 92.7 176 128 176C128.5 176 129.1 176 129.6 176C137 139.5 169.3 112 208 112C223 112 237 116.1 248.9 123.2C262.2 97.5 289 80 320 80C351 80 377.8 97.6 391.1 123.2C403.1 116.1 417.1 112 432 112C470.7 112 503 139.5 510.4 176C510.9 176 511.5 176 512 176C547.3 176 576 204.7 576 240C576 251.7 572.9 262.6 567.4 272L72.6 272C67.1 262.6 64 251.7 64 240zM64 347.4C64 332.3 76.3 320 91.4 320L548.5 320C563.6 320 575.9 332.3 575.9 347.4C575.9 417.9 531.5 478.1 469.2 501.5L467.5 516C465.5 532 451.9 544 435.7 544L204.2 544C188.1 544 174.4 532 172.4 516L170.6 501.6C108.4 478.1 64 417.9 64 347.4z"/>
                         </svg>
+                      </div>
                         <h4 class="card-title">Feeding</h4>
-                        <p class="card-text">Energy Drinks and Doritos</p>
-                    </div>
-                    <div class="card-footer text-center py-3 border-0">
-                        <a href="#" class="btn btn-dark">See Profile</a>
+                        <p class="card-text flex-grow-1">Energy Drinks and Doritos</p>
+                        <div class="card-footer mt-auto pt-3 border-0">
+                            <a href="#" class="btn btn-dark">See Profile</a>
+                        </div>
                     </div>
                 </div>
             </div>
 
+
             <!-- Card 4 -->
             <div class="col-md-3 mb-4">
-                <div class="CARD h-100 rounded-4 d-flex flex-column">
-                    <div class="card-body text-center py-4 flex-grow-1">
+                <div class="CARD h-100 rounded-4 d-flex flex-column">  
+                    <div class="card-body text-center py-4 d-flex flex-column">
+                      <div class="card-icon mb-3">  
                         <svg width="60" height="60" viewBox="0 0 640 640">
-                           <path d="M232.7 69.9L224 96L128 96C110.3 96 96 110.3 96 128C96 145.7 110.3 160 128 160L512 160C529.7 160 544 145.7 544 128C544 110.3 529.7 96 512 96L416 96L407.3 69.9C402.9 56.8 390.7 48 376.9 48L263.1 48C249.3 48 237.1 56.8 232.7 69.9zM512 208L128 208L149.1 531.1C150.7 556.4 171.7 576 197 576L443 576C468.3 576 489.3 556.4 490.9 531.1L512 208z"/>
+                            <path d="M232.7 69.9L224 96L128 96C110.3 96 96 110.3 96 128C96 145.7 110.3 160 128 160L512 160C529.7 160 544 145.7 544 128C544 110.3 529.7 96 512 96L416 96L407.3 69.9C402.9 56.8 390.7 48 376.9 48L263.1 48C249.3 48 237.1 56.8 232.7 69.9zM512 208L128 208L149.1 531.1C150.7 556.4 171.7 576 197 576L443 576C468.3 576 489.3 556.4 490.9 531.1L512 208z"/>
                         </svg>
+                      </div>
                         <h4 class="card-title">Habitat</h4>
-                        <p class="card-text">The brown container where he belongs</p>
-                    </div>
-                    <div class="card-footer text-center py-3 border-0">
-                        <a href="#" class="btn btn-dark">See Profile</a>
+                        <p class="card-text flex-grow-1">The brown container where he belongs</p>
+                        <div class="card-footer mt-auto pt-3 border-0">
+                            <a href="#" class="btn btn-dark">See Profile</a>
+                        </div>
                     </div>
                 </div>
             </div>
+
             
+
         </div>
     </div>
 </section>
@@ -181,36 +188,42 @@
   <h2>Peculiarities of the Assmongoloid</h2>
 
   <div id="accordion">
-    <div class="card">
+    
+    <div class="card mb-2">
       <div class="card-header">
         <a class="btn" data-bs-toggle="collapse" href="#collapseOne">
           Physical malformations
         </a>
       </div>
+
       <div id="collapseOne" class="collapse" data-bs-parent="#accordion">
         <div class="card-body">
          This creature haves shapes that can fit inside the ventilation of personal computers for easier reparation. He also sleeps inside ocasionally.
         </div>
       </div>
     </div>
-    <div class="card">
+
+    <div class="card mb-2">
       <div class="card-header">
         <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseTwo">
         Feeding habits and behaviour
       </a>
       </div>
+
       <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
         <div class="card-body">
          His liver can synthesize every nutriend needed for sub-living from carbs and caffeine.
         </div>
       </div>
     </div>
-    <div class="card">
+
+    <div class="card mb-2">
       <div class="card-header">
         <a class="collapsed btn" data-bs-toggle="collapse" href="#collapseThree">
           Current status and conservation
         </a>
       </div>
+
       <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
         <div class="card-body">
           As for now he's considered as a human being in 26 contries, even though he rarely ever takes advantadge of this. The Assmongoloid is very frugal being able to survive from soda and using the smell of a death rat rotting at direct sunlight as an alarm clock.
@@ -221,8 +234,7 @@
 </div>
 </section>
 
-
-  <section id="donations" class="py-5 bg-light">
+ <section id="donations" class="py-5 bg-light">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-8">
@@ -237,7 +249,7 @@
         </div>
 
         <!-- Donation Form -->
-        <form action="https://formspree.io/f/mldpoqne" method="POST" class="bg-white p-4 rounded shadow-sm">
+        <form action="https://formspree.io/f/xqaywqqz" method="POST" class="bg-white p-4 rounded shadow-sm">
           
           <!-- Personal Information -->
           <div class="row mb-4">
@@ -245,6 +257,7 @@
               <label for="firstName" class="form-label">First Name</label>
               <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your first name" required>
             </div>
+
             <div class="col-md-6 mb-3">
               <label for="lastName" class="form-label">Last Name</label>
               <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your last name" required>
@@ -261,6 +274,7 @@
               <label for="phone" class="form-label">Phone Number</label>
               <input type="tel" class="form-control" id="phone" name="phone" placeholder="Enter your phone number" required>
             </div>
+
             <div class="col-md-6 mb-3">
               <label for="email" class="form-label">Email Address</label>
               <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
@@ -354,26 +368,56 @@
       
       <!-- Column 2 -->
       <div class="col-md-3">
-        <h2 class="h4 mb-3">HELLO</h2>
-        <p class="mb-2">fillerfiller filler filler</p>
-        <p class="mb-2">fillerfiller filler filler</p>
-        <p class="mb-2">fillerfiller filler filler</p>
+        <h2 class="h4 mb-3">LINKS</h2>
+        <a href="#bigShot" class="mb-2 d-block text-decoration-none text-white">Gallery</a>
+        <a href="#faq" class="mb-2 d-block text-decoration-none text-white">Peculiarities</a>
+        <a href="https://stcwebdesign.gamer.gd/" class="mb-2 d-block text-decoration-none text-white">Blog</a>
+        <a href="#donations" class="mb-2 d-block text-decoration-none text-white">Donations</a>
       </div>
       
       <!-- Column 3 -->
       <div class="col-md-3">
-        <h2 class="h4 mb-3">HELLO</h2>
-        <p class="mb-2">fillerfiller filler filler</p>
-        <p class="mb-2">fillerfiller filler filler</p>
-        <p class="mb-2">fillerfiller filler filler</p>
+        <h2 class="h4 mb-3">Dumb Ideas</h2>
+        <p class="mb-2">Trash cans</p>
+        <p class="mb-2">Rescue a virgin</p>
+        <p class="mb-2">Inception</p>
+        <p class="mb-2">Research</p>
       </div>
       
       <!-- Column 4 -->
       <div class="col-md-3">
-        <h2 class="h4 mb-3">HELLO</h2>
-        <p class="mb-2">fillerfiller filler filler</p>
-        <p class="mb-2">fillerfiller filler filler</p>
-        <p class="mb-2">fillerfiller filler filler</p>
+        <h2 class="h4 mb-3">LIKE 4 LIKE PLZ</h2>
+        <div id="footerLinks" class="mb-3">
+          <!-- Fixed Facebook SVG -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-facebook me-3" viewBox="0 0 16 16">
+            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-twitter me-3" viewBox="0 0 16 16">
+            <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334q.002-.211-.006-.422A6.7 6.7 0 0 0 16 3.542a6.7 6.7 0 0 1-1.889.518 3.3 3.3 0 0 0 1.447-1.817 6.5 6.5 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.32 9.32 0 0 1-6.767-3.429 3.29 3.29 0 0 0 1.018 4.382A3.3 3.3 0 0 1 .64 6.575v.045a3.29 3.29 0 0 0 2.632 3.218 3.2 3.2 0 0 1-.865.115 3 3 0 0 1-.614-.057 3.28 3.28 0 0 0 3.067 2.277A6.6 6.6 0 0 1 .78 13.58a6 6 0 0 1-.78-.045A9.34 9.34 0 0 0 5.026 15"/>
+          </svg>
+
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+          </svg>
+        </div>
+        
+        <!-- Updated Form for Bootstrap 5 -->
+        <form class="needs-validation" action="https://formspree.io/f/xqaywqqz" method="POST" novalidate>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="pwd" class="form-label">Password:</label>
+            <input type="password" class="form-control" id="pwd" name="password" required>
+          </div>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="remember" name="remember_me">
+            <label class="form-check-label" for="remember">Remember me</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
       </div>
       
     </div>
@@ -384,109 +428,84 @@
     <!-- Footer of Footers -->
     <div class="row">
       <div class="col-12 text-center">
-        <div class="d-flex justify-content-around flex-wrap">
-          <span>Cop ur mom gagagag</span>
-          <span>Blue blegh aaaag ok</span>
+        <div class="d-flex justify-content-between align-items-center flex-wrap">
+          <span>&copy; FuckingLosers. All rights lost.</span>
+          <div class="d-flex gap-3"> 
+            <span>Police</span>
+            <span>Conditions</span>
+            <span>Oreos</span>
+          </div>
         </div>
       </div>
     </div>
+
   </div>
 </section>
-  
 
-  
+<!-- Confirmation Modal -->
+<div class="modal fade" id="donationModal" tabindex="-1" aria-labelledby="donationModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="donationModalLabel">Important Notice</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>By proceeding, you acknowledge that your donation supports vital gamer preservation efforts. This includes energy drinks, Doritos, and maintaining optimal gaming conditions.</p>
+        <p class="mb-0"><strong>Do you wish to continue to the donation form?</strong></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No, I'm Scared</button>
+        <button type="button" class="btn btn-success" id="confirmDonationBtn">Yes, Save a Gamer!</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- <script>
+<script>
 document.addEventListener('DOMContentLoaded', function() {
-  const form = document.querySelector('form[action*="formspree"]');
-  const customRadio = document.getElementById('amountCustom');
-  const customContainer = document.getElementById('customAmountContainer');
-  const customAmountInput = document.getElementById('customAmount');
-  const formSuccess = document.getElementById('formSuccess');
+  const confirmBtn = document.getElementById('confirmDonationBtn');
   
-  // Custom amount toggle
-  customRadio.addEventListener('change', function() {
-    if (this.checked) {
-      customContainer.style.display = 'block';
-      customAmountInput.required = true;
-    } else {
-      customContainer.style.display = 'none';
-      customAmountInput.required = false;
-    }
-  });
-  
-  // Hide custom amount if other amounts are selected
-  const allRadios = document.querySelectorAll('input[name="donationAmount"]');
-  allRadios.forEach(radio => {
-    radio.addEventListener('change', function() {
-      if (this.id !== 'amountCustom') {
-        customContainer.style.display = 'none';
-        customAmountInput.required = false;
-      }
-    });
-  });
-  
-  // Formspree submission handling
-  if (form) {
-    form.addEventListener('submit', async function(e) {
-      e.preventDefault();
+  if (confirmBtn) {
+    confirmBtn.addEventListener('click', function() {
+      // Close the modal
+      const modal = bootstrap.Modal.getInstance(document.getElementById('donationModal'));
+      modal.hide();
       
-      const submitButton = form.querySelector('button[type="submit"]');
-      const originalText = submitButton.innerHTML;
-      
-      // Show loading state
-      submitButton.innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Sending...';
-      submitButton.disabled = true;
-      
-      try {
-        const formData = new FormData(form);
-        
-        // If custom amount is selected, use that value
-        if (customRadio.checked && customAmountInput.value) {
-          formData.set('donationAmount', `$${customAmountInput.value} (Custom)`);
+      // Force remove any stuck backdrop and reset body styles
+      setTimeout(() => {
+        const backdrop = document.querySelector('.modal-backdrop');
+        if (backdrop) {
+          backdrop.remove();
         }
+        document.body.classList.remove('modal-open');
+        document.body.style.overflow = '';
+        document.body.style.paddingRight = '';
         
-        const response = await fetch(form.action, {
-          method: 'POST',
-          body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
+        // Now scroll to donations
+        document.getElementById('donations').scrollIntoView({ 
+          behavior: 'smooth' 
         });
-        
-        if (response.ok) {
-          // Show success message
-          form.style.display = 'none';
-          formSuccess.style.display = 'block';
-          form.reset();
-        } else {
-          throw new Error('Form submission failed');
-        }
-        
-      } catch (error) {
-        alert('Sorry, there was an error submitting your donation. Please try again.');
-        console.error('Form submission error:', error);
-      } finally {
-        // Reset button state
-        submitButton.innerHTML = originalText;
-        submitButton.disabled = false;
-      }
+      }, 350);
     });
   }
+  
+  // Additional cleanup when modal closes normally
+  const modalElement = document.getElementById('donationModal');
+  modalElement.addEventListener('hidden.bs.modal', function() {
+    document.body.classList.remove('modal-open');
+    document.body.style.overflow = '';
+  });
 });
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
-    <script type="module" src="script.js"></script>
-  </body>
-</html>
-    <script type="module" src="script.js"></script>
-  </body>
-</html>
-    <script type="module" src="script.js"></script>
-  </body>
-</html>
-    <script type="module" src="script.js"></script>
-  </body>
-</html>
+  
+
+
+
+
+
