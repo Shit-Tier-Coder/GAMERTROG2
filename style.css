@@ -4,13 +4,6 @@
   max-width: 500px; /* Prevents it from getting too huge */
 }
 
-.hero-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 2rem 0; 
-}
-
 @media (min-width: 768px) {
   .hero-text {
     align-items: flex-start;
@@ -20,34 +13,9 @@
   .hero-image {
     width: 85% !important;
   }
-}
-
-.navbar {background-color: blueviolet;}
-
-.navbar-nav {
-  width: 100%;
-  justify-content: flex-end;
-}
-
-.nav-item {
-  transition: transform 0.3s ease;
-  margin: 0 1rem;
-}
-
-.nav-link {
-  font-size: 1.2rem !important;
-  font-weight: 600 !important;
-}
-
+  
 .nav-item:hover {transform: scale(1.03);}
-
-.CARD {transition: transform 0.3s ease; background-color: mediumpurple;
- border: 1px solid rgba(0,0,0,0.1);}
 .CARD:hover {transform: scale(1.03);}
-.card-header {background-color: mediumpurple !important;}
-.card-body {
-  padding: 2rem 1.5rem !important;
-}
 .card-text {
   line-height: 1.6; /* Better line spacing for readability */
   margin-bottom: 1.5rem !important; 
@@ -66,3 +34,4 @@
   max-width: 800px;
   margin: 0 auto;
 }
+
