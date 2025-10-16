@@ -29,3 +29,8 @@
   max-width: 800px;
   margin: 0 auto;
 }
+
+#donationCont {
+  background: linear-gradient(135deg, #D8BFD8, whitesmoke) !important;
+  background-attachment: fixed;
+}
