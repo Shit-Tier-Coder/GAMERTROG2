@@ -2,9 +2,23 @@
   publish = ""
 
 [[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Content-Type = "application/xml"
+
+[[headers]]
+  for = "/robots.txt" 
+  [headers.values]
+    Content-Type = "text/plain"
+
+[build]
+  publish = ""
+
+[[headers]]
   for = "/*"
   [headers.values]
     Cache-Control = "public, max-age=3600"
+    Content-Encoding = "gzip"
 
 [[headers]]
   for = "*.css"
